@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "dist/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    {
+      "src": "/remoteEntry.js",
+      "headers": { "Access-Control-Allow-Origin": "*" },
+      "dest": "/dist/remoteEntry.js"
+    },
+    { "src": "/(.*)", "dest": "/dist/$1" }
+  ]
+}

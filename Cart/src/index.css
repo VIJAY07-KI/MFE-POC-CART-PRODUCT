@@ -1,0 +1,141 @@
+/* ===============================
+   Base (Mobile First)
+================================ */
+.cart {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+  max-width: 100%;
+  margin: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cart-empty {
+  color: red;
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-info {
+  text-align: center;
+}
+
+.cart-name {
+  font-weight: 600;
+}
+
+.cart-price {
+  font-size: 14px;
+  color: #555;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cart-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-actions button:hover {
+  background: #d5d5d5;
+}
+
+.cart-actions .delete {
+  background: #e53935;
+  color: #fff;
+}
+
+.cart-actions .delete:hover {
+  background: #c62828;
+}
+
+.cart-total {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+/* ===============================
+   Tablet (≥ 641px)
+================================ */
+@media (min-width: 641px) {
+  .cart {
+    max-width: 720px;
+    margin: 24px auto;
+  }
+
+  .cart-title {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .cart-empty {
+    text-align: left;
+  }
+
+  .cart-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cart-info {
+    text-align: left;
+  }
+
+  .cart-actions {
+    justify-content: flex-end;
+  }
+
+  .cart-total {
+    text-align: right;
+    font-size: 18px;
+  }
+}
+
+/* ===============================
+   Desktop (≥ 1025px)
+================================ */
+@media (min-width: 1025px) {
+  .cart {
+    max-width: 900px;
+    padding: 24px;
+  }
+
+  .cart-title {
+    font-size: 24px;
+  }
+
+  .cart-actions button {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+
+  .cart-total {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "mfe-products",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "api": "npx json-server --watch src/db.json --port 3001"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@vercel/node": "^5.5.16",
+    "autoprefixer": "^10.4.23",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "json-server": "^1.0.0-beta.3",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.4",
+    "tailwindcss": "^3.4.19",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2"
+  }
+}
